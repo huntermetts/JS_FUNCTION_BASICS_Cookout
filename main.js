@@ -1,0 +1,57 @@
+// Testing connection 
+console.log("Hello! Exercise below:");
+
+
+
+
+// Exercise Below:
+const hamburger = {
+	name: 'Hamburger',
+	type: 'beef',
+	cooked: false,
+}
+const zucchini = {
+	name: 'Zucchini',
+	type: 'vegetable',
+	cooked: false,
+}
+const chickenBreast = {
+	name: 'Chicken Breast',
+	type: 'chicken',
+	cooked: false,
+}
+const corn = {
+	name: 'Corn',
+	type: 'vegetable',
+	cooked: false,
+}
+const steak = {
+	name: 'Steak',
+	type: 'beef',
+	cooked: false,
+}
+
+// An first array containing the objects to be cooked.
+let uncookedFood = [hamburger, zucchini, chickenBreast, corn, steak];
+
+// An empty array that will store the objects after the `grill()` function cooks the food.
+const cookedFood = [];
+
+
+
+
+// More copy and pasted code from the practice
+function grill (currentObject) {
+    // Modify the food so that it is cooked
+    currentObject.cooked = true;
+
+    // Put the cooked food into the appropriate array
+    cookedFood.push(currentObject);
+    return cookedFood;
+};
+
+// MY CODE "GRILLING" THE FOOD
+for (i = 0; i < uncookedFood.length; i++){
+    grill(uncookedFood[i].name);
+}
+console.log(cookedFood);

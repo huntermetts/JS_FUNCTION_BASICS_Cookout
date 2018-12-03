@@ -52,6 +52,6 @@ function grill (currentObject) {
 
 // MY CODE "GRILLING" THE FOOD
 for (i = 0; i < uncookedFood.length; i++){
-    grill(uncookedFood[i].name);
+	grill(uncookedFood[i]);
 }
 console.log(cookedFood);
